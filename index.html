@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+
+  <body>
+    <div id="sidebar">
+      <img src="assets/spotify-logo.png" />
+      <ul>
+        <li><ion-icon name="home"></ion-icon>Home</li>
+        <li><ion-icon name="search"></ion-icon>Search</li>
+        <li><ion-icon name="grid"></ion-icon>Library</li>
+      </ul>
+    </div>
+
+    <div id="content">
+      <div id="navbar">
+        <div id="navbar-left">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+          <div id="search-wrapper">
+            <ion-icon name="search-outline"></ion-icon>
+            <input type="search" onkeypress="search(event)" />
+          </div>
+        </div>
+        <div id="navbar-right">
+          <button class="navbar-btn sign-up-btn">SIGN UP</button>
+          <button class="navbar-btn login-btn">LOGIN</button>
+        </div>
+      </div>
+
+      <div id="main">
+        <div class="card">
+          <div class="media">
+            <img src="assets/album-cover.jpeg" />
+            <ion-icon name="play-sharp"></ion-icon>
+          </div>
+          <div class="card-body">
+            <p>Song title</p>
+            <span>Artist Name</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <audio>
+      Your browser does not support the
+      <code>audio</code> element.
+    </audio>
+
+    <div id="footer">
+      <div id="footer-text">
+        <p id="preview">PREVIEW OF SPOTIFY</p>
+        <p>
+          Sign up to get unlimited songs and podcasts with occasional ads. No
+          credit card needed.
+        </p>
+      </div>
+      <button class="spoty-btn">SIGN UP FOR FREE</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
